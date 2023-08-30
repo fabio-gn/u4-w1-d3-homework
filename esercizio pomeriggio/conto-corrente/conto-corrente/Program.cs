@@ -10,15 +10,11 @@ namespace conto_corrente
     {
         static void Main(string[] args)
         {
-            ContoCorrente conto1 = new ContoCorrente("Fabio Giannasi");
-            conto1.ApriConto();
-            Console.WriteLine("hai " + conto1.Saldo + " euro");
-            conto1.Prelievo();
-            Console.WriteLine("hai " + conto1.Saldo + " euro");
-            conto1.Versamento();
-            Console.WriteLine("hai " + conto1.Saldo + " euro");
-            Console.ReadLine();
-            
+
+            ContoCorrente.Inizializza();
+            //conto1.PrintMenu();
+            //conto1.Menu();
+
         }
     }
 }
